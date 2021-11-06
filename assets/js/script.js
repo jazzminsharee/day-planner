@@ -6,5 +6,95 @@
 // var = 
 
 // current day is displayed at the top of the calendar
-$("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
+$("#currentDay").text(moment().format('LLL'));
 
+
+// color-coding time blocks
+
+var timeColor = function() {
+   if (moment().format('HH') == 9) {
+     $("#9").addClass("present")
+   }
+   if (moment().format('HH') > 9) {
+    $("#9").addClass("past")
+  }
+  if (moment().format('HH') < 9) {
+    $("#9").addClass("future")
+  }
+   if (moment().format('HH') == 10) {
+    $("#10").addClass("present")
+  }
+  if (moment().format('HH') > 10) {
+    $("#10").addClass("past")
+  }
+  if (moment().format('HH') < 10) {
+    $("#10").addClass("future")
+  }
+  if (moment().format('HH') == 11) {
+    $("#11").addClass("present")
+  }
+  if (moment().format('HH') > 11) {
+    $("#11").addClass("past")
+  }
+  if (moment().format('HH') < 11) {
+    $("#11").addClass("future")
+  }
+  if (moment().format('HH') == 12) {
+    $("#12").addClass("present")
+  }
+  if (moment().format('HH') > 12) {
+    $("#12").addClass("past")
+  }
+  if (moment().format('HH') < 12) {
+    $("#12").addClass("future")
+  }
+  if (moment().format('HH') == 13) {
+    $("#13").addClass("present")
+  }
+  if (moment().format('HH') > 13) {
+    $("#13").addClass("past")
+  }
+  if (moment().format('HH') < 13) {
+    $("#13").addClass("future")
+  }
+  if (moment().format('HH') == 14) {
+    $("#14").addClass("present")
+  }
+  if (moment().format('HH') > 14) {
+    $("#14").addClass("past")
+  }
+  if (moment().format('HH') < 14) {
+    $("#14").addClass("future")
+  }
+  if (moment().format('HH') == 15) {
+    $("#15").addClass("present")
+  }
+  if (moment().format('HH') > 15) {
+    $("#15").addClass("past")
+  }
+  if (moment().format('HH') < 15) {
+    $("#15").addClass("future")
+  }
+  if (moment().format('HH') == 16) {
+    $("#16").addClass("present")
+  }
+  if (moment().format('HH') > 16) {
+    $("#16").addClass("past")
+  }
+  if (moment().format('HH') < 16) {
+    $("#16").addClass("future")
+  }
+  if (moment().format('HH') == 17) {
+    $("#17").addClass("present")
+  }
+  if (moment().format('HH') > 17) {
+    $("#17").addClass("past")
+  }
+  if (moment().format('HH') < 17) {
+    $("#17").addClass("future")
+  }
+}
+
+
+
+timeColor();
