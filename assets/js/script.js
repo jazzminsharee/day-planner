@@ -3,7 +3,7 @@
 // moment.js says what day it is at the top of the screen and keeps the current time
 // events in the planner change color based on past hours, current hour, and future hours
 
-// var = 
+var saveBtnEl = $(".saveBtn");
 
 // current day is displayed at the top of the calendar
 $("#currentDay").text(moment().format('LLL'));
@@ -95,6 +95,21 @@ var timeColor = function() {
   }
 }
 
+// save button click
+var saveActivity = function() {
+
+  var time = $(this).siblings(".hour").text();
+  var activity = $(this).siblings(".activity").val();
+
+  console.log(this);
+
+  // THEN the text for that event is saved in local storage
+  localStorage.setItem(time, activity);
+};
+
+// storage persists upon refreshing the page
+
 
 
 timeColor();
+saveBtnEl.on("click", saveActivity);
