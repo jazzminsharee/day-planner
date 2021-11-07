@@ -107,9 +107,20 @@ var saveActivity = function() {
   localStorage.setItem(time, activity);
 };
 
-// storage persists upon refreshing the page
+// storage persists upon refreshing the
+
+$("#activity-9").val(localStorage.getItem("9AM"));
+$("#activity-10").val(localStorage.getItem("10AM"));
+$("#activity-11").val(localStorage.getItem("11AM"));
+$("#activity-12").val(localStorage.getItem("12PM"));
+$("#activity-13").val(localStorage.getItem("1PM"));
+$("#activity-14").val(localStorage.getItem("2PM"));
+$("#activity-15").val(localStorage.getItem("3PM"));
+$("#activity-16").val(localStorage.getItem("4PM"));
+$("#activity-17").val(localStorage.getItem("5PM"));
 
 
 
 timeColor();
 saveBtnEl.on("click", saveActivity);
+//storageRetrieval;
