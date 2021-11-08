@@ -1,6 +1,6 @@
 // layout of rows from 9am-5pm
-// input text to change events and lick on the side to save it to local storage
 // moment.js says what day it is at the top of the screen and keeps the current time
+// input text to change events and click on the button to save it to local storage
 // events in the planner change color based on past hours, current hour, and future hours
 
 var saveBtnEl = $(".saveBtn");
@@ -123,4 +123,3 @@ $("#activity-17").val(localStorage.getItem("5PM"));
 
 timeColor();
 saveBtnEl.on("click", saveActivity);
-//storageRetrieval;
